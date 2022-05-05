@@ -6,12 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true"> <!-- todo o conteudo vem aqui -->
+  <ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <img src="assets/ronaldinho.jpg" alt="ronaldinho">
+
+    <ion-card-header>
+      <ion-card-title>Desenvolvido por:</ion-card-title>
+    </ion-card-header>
+
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Ronaldinho Gaúcho</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+
+  </ion-card>
 </ion-content>
