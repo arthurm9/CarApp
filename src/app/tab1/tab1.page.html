@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar color="dark">
+  <ion-buttons slot="secondary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button color="primary">
+      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>Car Shop</ion-title>
+</ion-toolbar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-searchbar value=""></ion-searchbar>
+<ion-item>
+  <ion-thumbnail slot="start">
+    <img class="carros" src="https://s2.glbimg.com/8MFALpEbdWHsaSe5BEGjYGtOXNE=/0x0:1200x800/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2021/0/h/AyLyV2TiilTOyS1COUIg/2022-audi-a8-facelift-49.jpg">
+  </ion-thumbnail>
+  <ion-label>Audi A8</ion-label>
+  <ion-badge color="medium">R$355.378,00</ion-badge>
+</ion-item>
+
+<ion-item>
+  <ion-thumbnail slot="start">
+    <img class="carros" src="https://cdn.autopapo.com.br/box/uploads/2021/04/30152018/ferrari_roma-2-1800x1200.jpg">
+  </ion-thumbnail>
+  <ion-label>Ferrari Roma</ion-label>
+  <ion-badge color="medium">R$ 3,3 mi.</ion-badge>
+</ion-item>
+
+<ion-item>
+  <ion-thumbnail slot="start">
+    <img class="carros" src="https://cdn.motor1.com/images/mgl/eQ3RK/s3/ford-mustang-mach-1-br.jpg">
+  </ion-thumbnail>
+  <ion-label>Mustang Mach 1</ion-label>
+  <ion-badge color="medium">R$ 532.785,00</ion-badge>
+</ion-item>
+
 </ion-content>
